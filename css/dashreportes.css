@@ -1,0 +1,67 @@
+/* *
+* SECCION PRINCIPAL DEL DASHBOARD MAIN
+* */
+.section_view {
+  display: grid;
+  grid-template-columns:1fr 1fr;
+  grid-template-rows: 4rem 25rem 25rem;
+  grid-template-areas: 
+  "title title"
+  "content1 content1"
+  "content2 content3"
+  ;
+  gap: 2rem;
+}
+/* * DEFINI AREA DE GRID A CADA SECCION */
+.section_view h1 {
+  grid-area: title; 
+}
+.content1 {
+  grid-area: content1;
+}
+.content2 {
+  grid-area: content2;
+  
+}
+.content3 {
+  grid-area: content3;
+}
+
+.content2, .content3 {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  overflow: scroll;
+}
+
+/* *
+* SECCION DE TABLE - OVERFLOW
+* */
+.content1 {
+  overflow: auto;
+}
+/* *
+* SECCION DE GRAFICOS
+* */
+.grafic {
+  width: 100%;
+  min-width: 20rem;
+}
+
+/* *
+* RESPONSIVIDAD MOVIL
+* */
+
+@media screen and (max-width: 1024px) {
+  .section_view {
+    max-width: 100%;
+    grid-template-columns: 1fr;
+    grid-template-rows: 6rem repeat(3, min-content);
+    grid-template-areas: 
+    "title"
+    "content1" 
+    "content2"
+    "content3"
+    ;
+  }
+}

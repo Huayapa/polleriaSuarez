@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Dashboard - Reportes</title>
+  <!-- Permisos de poaticas -->
+  <meta http-equiv="Permissions-Poacy" content="browsing-topics=(), interest-cohort=(), attribution-reporting=()">
+  <!-- ESTILOS -->
+  <link rel="stylesheet" href="css/global.css">
+  <link rel="stylesheet" href="css/globaldashboard.css">
+  <link rel="stylesheet" href="css/dashreportes.css">
+  <!-- Componentes -->
+  <script src="components/dashboardHeader/dashboardheaderComponent.js"></script>
+</head>
+<body>
+  <dashboardheader-component></dashboardheader-component>
+  <main>
+    <article class="section section_view">
+      <!-- !TITULO -->
+      <h1 class="title">Reportes</h1>
+
+      <!-- !SECCION 1 - PEDIDOS -->
+      <section class="card content1">
+        <div class="titleinfo">
+          <h2>Pedidos</h2>
+        </div>
+        <!-- *tabla -->
+        <table>
+          <thead>
+              <tr>
+                  <th>Id</th>
+                  <th>Cliente</th>
+                  <th>Fecha de Pedido</th>
+                  <th>Pedidos</th>
+                  <th>Total</th>
+                  <th>Lista</th>
+                  <th>Dirección</th>
+                  <th>Estado</th>
+              </tr>
+          </thead>
+          <tbody>
+              <tr>
+                  <td>1</td>
+                  <td>Josue Andres</td>
+                  <td>21/02/2025-19:21</td>
+                  <td>12</td>
+                  <td>S/ 12</td>
+                  <td><button class="btn-dark">Ver</button></td>
+                  <td>Avenida Santa Rosa</td>
+                  <td><button class="btn-red">Pagado</button></td>
+              </tr>
+              <tr>
+                  <td>2</td>
+                  <td>Pepito Perez</td>
+                  <td>21/02/2025-19:21</td>
+                  <td>12</td>
+                  <td>S/ 32</td>
+                  <td><button class="btn-dark">Ver</button></td>
+                  <td>Avenida Santa Rosa</td>
+                  <td><button class="btn-red">Pagado</button></td>
+              </tr>
+              <tr>
+                  <td>3</td>
+                  <td>Yupanqui Paupañaupa</td>
+                  <td>21/02/2025-19:21</td>
+                  <td>2</td>
+                  <td>S/ 12</td>
+                  <td><button class="btn-dark">Ver</button></td>
+                  <td>Avenida Santa Rosa</td>
+                  <td><button class="btn-red">Pagado</button></td>
+              </tr>
+              <tr>
+                  <td>4</td>
+                  <td>Quispe Quispe</td>
+                  <td>21/02/2025-19:21</td>
+                  <td>3</td>
+                  <td>S/ 4</td>
+                  <td><button class="btn-dark">Ver</button></td>
+                  <td>Avenida Santa Rosa</td>
+                  <td><button class="btn-red">Cancelado</button></td>
+              </tr>
+              <tr>
+                  <td>5</td>
+                  <td>Pablito Clavito</td>
+                  <td>21/02/2025-19:21</td>
+                  <td>4</td>
+                  <td>S/ 5</td>
+                  <td><button class="btn-dark">Ver</button></td>
+                  <td>Avenida Santa Rosa</td>
+                  <td><button class="btn-red">Pagado</button></td>
+              </tr>
+              <tr>
+                  <td>6</td>
+                  <td>Mamani Hernandez</td>
+                  <td>21/02/2025-19:21</td>
+                  <td>6</td>
+                  <td>S/ 5</td>
+                  <td><button class="btn-dark">Ver</button></td>
+                  <td>Avenida Santa Rosa</td>
+                  <td><button class="btn-red">Pagado</button></td>
+              </tr>
+              <tr>
+                  <td>7</td>
+                  <td>Smith Atahualpa</td>
+                  <td>21/02/2025-19:21</td>
+                  <td>7</td>
+                  <td>S/ 5</td>
+                  <td><button class="btn-dark">Ver</button></td>
+                  <td>Avenida Santa Rosa</td>
+                  <td><button class="btn-red">Pagado</button></td>
+              </tr>
+          </tbody>
+        </table>
+      </section>
+
+      <!-- !SECCION 2 - REPORTES DE VENTAS -->
+      <section class="card content2">
+        <div class="titleinfo">
+          <h2>Total Productos ventas</h2>
+        </div>
+        <!-- *GRAFICO -->
+        <object class="grafic" data="assets/svg/graficcurves.svg" type="image/svg+xml"></object>
+      </section>
+
+      <!-- !SECCION 3 - PRODUCTOS MAS COMPRADAS -->
+      <section class="card content3">
+        <div class="titleinfo">
+          <h2>Venta del mes</h2>
+        </div>
+        <!-- *GRAFICO -->
+        <object class="grafic" data="assets/svg/graficbar.svg" type="image/svg+xml"></object>
+      </section>
+    </article>
+  </main>
+</body>
+</html>
