@@ -1,0 +1,72 @@
+/* *
+* SECCION PRINCIPAL DEL DASHBOARD MAIN
+* */
+.section_view {
+  max-width: 60rem;
+  width: 100%;
+  min-height: 100vh;
+  padding: 2rem 0;
+  margin: 0 auto;
+
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+  grid-template-rows: 4rem 6rem 24rem;
+  grid-template-areas: 
+  "title title title title title title"
+  "content1 content1 content1 content2 content2 content2"
+  "content3 content3 content3 content3 content3 content3"
+  "content4 content4 content4 content4 content5 content5"
+  ;
+  gap: 1rem;
+}
+/* * DEFINI AREA DE GRID A CADA SECCION */
+.section_view h1 {
+  grid-area: title; 
+}
+.content1 {
+  grid-area: content1;
+}
+.content2 {
+  grid-area: content2;
+}
+.content3 {
+  grid-area: content3;
+}
+.content4 {
+  grid-area: content4;
+}
+.content5 {
+  grid-area: content5;
+}
+
+/* *
+* SECCION DE GRAFICO (AJUSTAR EL GRAFICO)
+* */
+
+
+.card_grafic {
+  & object {
+    width: 100%;
+    height: 18rem;
+  }
+}
+
+
+/* *
+* RESPONSIVIDAD MOVIL
+* */
+
+@media screen and (max-width: 720px) {
+  .section_view {
+    grid-template-columns: 1fr;
+    grid-template-rows: 4rem 6rem 6rem 20rem;
+    grid-template-areas: 
+    "title"
+    "content1" 
+    "content2"
+    "content3"
+    "content4" 
+    "content5"
+    ;
+  }
+}

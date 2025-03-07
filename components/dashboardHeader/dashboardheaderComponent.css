@@ -1,11 +1,19 @@
+:root {
+  min-height: 100vh;
+}
+
 #header {
   max-width: 100%;
   width: 100%;
-  background-color: var(--color-primary-header-dashboard);
   height: 100vh;
+  background-color: var(--color-d-primary);
+
   display: flex;
   flex-direction: column;
   align-items: center;
+
+  position: sticky;
+  top: 0px;
   transition: all 0.5s ease;
   & .logo {
     margin: 1rem 0;
@@ -23,7 +31,7 @@
       padding: 1rem;
       text-decoration: none;
       border-left: 2px solid transparent;
-      color: var(--color-secondary);
+      color: var(--color-d-secondary);
 
       display: flex;
       align-items: center;
@@ -35,7 +43,7 @@
       }
       &:hover {
         background-color: #ffffff20;
-        border-left: 2px solid var(--color-secondary);
+        border-left: 2px solid var(--color-d-secondary);
       }
     }
   }
@@ -45,6 +53,7 @@
 
 @media screen and (max-width: 720px) {
   #header {
+
     & .logo {
       width: 3rem;
       height: 3rem;

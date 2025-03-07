@@ -9,13 +9,165 @@
   <!-- ESTILOS -->
   <link rel="stylesheet" href="css/global.css">
   <link rel="stylesheet" href="css/globaldashboard.css">
+  <link rel="stylesheet" href="css/dashinicio.css">
   <!-- Componentes -->
   <script src="components/dashboardHeader/dashboardheaderComponent.js"></script>
 </head>
 <body>
   <dashboardheader-component></dashboardheader-component>
   <main>
-    <h1>Prueba del Dashboard header</h1>
+    <article class="section_view">
+      <!-- !TITULO -->
+      <h1 class="title">Dashboard Suarez</h1>
+
+      <!-- !SECCION 1 -->
+      <section class="card cardlarge content1">
+        <div class="card_info">
+          <h2>Ventas Totales</h2>
+          <strong>S/ 9800</strong>
+        </div>
+        <div class="card_btn">
+          <button>
+            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 640 512">
+              <path d="M96 96l0 224c0 35.3 28.7 64 64 64l416 0c35.3 0 64-28.7 64-64l0-224c0-35.3-28.7-64-64-64L160 32c-35.3 0-64 28.7-64 64zm64 160c35.3 0 64 28.7 64 64l-64 0 0-64zM224 96c0 35.3-28.7 64-64 64l0-64 64 0zM576 256l0 64-64 0c0-35.3 28.7-64 64-64zM512 96l64 0 0 64c-35.3 0-64-28.7-64-64zM288 208a80 80 0 1 1 160 0 80 80 0 1 1 -160 0zM48 120c0-13.3-10.7-24-24-24S0 106.7 0 120L0 360c0 66.3 53.7 120 120 120l400 0c13.3 0 24-10.7 24-24s-10.7-24-24-24l-400 0c-39.8 0-72-32.2-72-72l0-240z"/>
+            </svg>
+          </button>
+        </div>
+      </section>
+
+      <!-- !SECCION 2 -->
+      <section class="card cardlarge content2">
+        <div class="card_info">
+          <h2>Ventas Totales</h2>
+          <strong>S/ 9800</strong>
+        </div>
+        <div class="card_btn">
+          <button>
+            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 640 512">
+              <path d="M96 96l0 224c0 35.3 28.7 64 64 64l416 0c35.3 0 64-28.7 64-64l0-224c0-35.3-28.7-64-64-64L160 32c-35.3 0-64 28.7-64 64zm64 160c35.3 0 64 28.7 64 64l-64 0 0-64zM224 96c0 35.3-28.7 64-64 64l0-64 64 0zM576 256l0 64-64 0c0-35.3 28.7-64 64-64zM512 96l64 0 0 64c-35.3 0-64-28.7-64-64zM288 208a80 80 0 1 1 160 0 80 80 0 1 1 -160 0zM48 120c0-13.3-10.7-24-24-24S0 106.7 0 120L0 360c0 66.3 53.7 120 120 120l400 0c13.3 0 24-10.7 24-24s-10.7-24-24-24l-400 0c-39.8 0-72-32.2-72-72l0-240z"/>
+            </svg>
+          </button>
+        </div>
+      </section>
+
+      <!-- !SECCION 3 -->
+      <section class="card content3 card_grafic">
+        <div class="titleinfo">
+          <h2>Venta del mes</h2>
+          <span>20/02/2025</span>
+        </div>
+        <object data="/assets/svg/graficcurve.svg" type="image/svg+xml"></object>
+      </section>
+
+      <!-- !SECCION 4 -->
+      <section class="card content4">
+        <h2>Productos más Vendidos</h2>
+        <table>
+            <thead>
+                <tr>
+                    <th>Id</th>
+                    <th>Nombre</th>
+                    <th>Cantidad V.</th>
+                    <th>Precio</th>
+                    <th>Total</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>1</td>
+                    <td>Pollo 1/4</td>
+                    <td>1203</td>
+                    <td>S/ 12</td>
+                    <td>S/ 2000</td>
+                </tr>
+                <tr>
+                    <td>2</td>
+                    <td>Pollo familiar</td>
+                    <td>234</td>
+                    <td>S/ 32</td>
+                    <td>S/ 2321</td>
+                </tr>
+                <tr>
+                    <td>3</td>
+                    <td>Chaufa</td>
+                    <td>23</td>
+                    <td>S/ 12</td>
+                    <td>S/ 2321</td>
+                </tr>
+                <tr>
+                    <td>4</td>
+                    <td>Gaseosa Inka Kola</td>
+                    <td>21</td>
+                    <td>S/ 4</td>
+                    <td>S/ 5332</td>
+                </tr>
+                <tr>
+                    <td>5</td>
+                    <td>Torta de chocolate</td>
+                    <td>21</td>
+                    <td>S/ 5</td>
+                    <td>S/ 321</td>
+                </tr>
+            </tbody>
+        </table>
+      </section>
+
+      <!-- !SECCION 5 -->
+      <section class="card content5 ">
+        <article  class="cardlarge">
+          <div class="card_info">
+            <h2>Ventas Totales</h2>
+            <strong>S/ 9800</strong>
+          </div>
+          <div class="card_btn">
+            <button>
+              <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 640 512">
+                <path d="M96 96l0 224c0 35.3 28.7 64 64 64l416 0c35.3 0 64-28.7 64-64l0-224c0-35.3-28.7-64-64-64L160 32c-35.3 0-64 28.7-64 64zm64 160c35.3 0 64 28.7 64 64l-64 0 0-64zM224 96c0 35.3-28.7 64-64 64l0-64 64 0zM576 256l0 64-64 0c0-35.3 28.7-64 64-64zM512 96l64 0 0 64c-35.3 0-64-28.7-64-64zM288 208a80 80 0 1 1 160 0 80 80 0 1 1 -160 0zM48 120c0-13.3-10.7-24-24-24S0 106.7 0 120L0 360c0 66.3 53.7 120 120 120l400 0c13.3 0 24-10.7 24-24s-10.7-24-24-24l-400 0c-39.8 0-72-32.2-72-72l0-240z"/>
+              </svg>
+            </button>
+          </div>
+        </article>
+        <article  class="cardlarge">
+          <div class="card_info">
+            <h2>Ventas Totales</h2>
+            <strong>S/ 9800</strong>
+          </div>
+          <div class="card_btn">
+            <button>
+              <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 640 512">
+                <path d="M96 96l0 224c0 35.3 28.7 64 64 64l416 0c35.3 0 64-28.7 64-64l0-224c0-35.3-28.7-64-64-64L160 32c-35.3 0-64 28.7-64 64zm64 160c35.3 0 64 28.7 64 64l-64 0 0-64zM224 96c0 35.3-28.7 64-64 64l0-64 64 0zM576 256l0 64-64 0c0-35.3 28.7-64 64-64zM512 96l64 0 0 64c-35.3 0-64-28.7-64-64zM288 208a80 80 0 1 1 160 0 80 80 0 1 1 -160 0zM48 120c0-13.3-10.7-24-24-24S0 106.7 0 120L0 360c0 66.3 53.7 120 120 120l400 0c13.3 0 24-10.7 24-24s-10.7-24-24-24l-400 0c-39.8 0-72-32.2-72-72l0-240z"/>
+              </svg>
+            </button>
+          </div>
+        </article>
+        <article  class="cardlarge">
+          <div class="card_info">
+            <h2>Ventas Totales</h2>
+            <strong>S/ 9800</strong>
+          </div>
+          <div class="card_btn">
+            <button>
+              <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 640 512">
+                <path d="M96 96l0 224c0 35.3 28.7 64 64 64l416 0c35.3 0 64-28.7 64-64l0-224c0-35.3-28.7-64-64-64L160 32c-35.3 0-64 28.7-64 64zm64 160c35.3 0 64 28.7 64 64l-64 0 0-64zM224 96c0 35.3-28.7 64-64 64l0-64 64 0zM576 256l0 64-64 0c0-35.3 28.7-64 64-64zM512 96l64 0 0 64c-35.3 0-64-28.7-64-64zM288 208a80 80 0 1 1 160 0 80 80 0 1 1 -160 0zM48 120c0-13.3-10.7-24-24-24S0 106.7 0 120L0 360c0 66.3 53.7 120 120 120l400 0c13.3 0 24-10.7 24-24s-10.7-24-24-24l-400 0c-39.8 0-72-32.2-72-72l0-240z"/>
+              </svg>
+            </button>
+          </div>
+        </article>
+        <article  class="cardlarge">
+          <div class="card_info">
+            <h2>Ventas Totales</h2>
+            <strong>S/ 9800</strong>
+          </div>
+          <div class="card_btn">
+            <button>
+              <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 640 512">
+                <path d="M96 96l0 224c0 35.3 28.7 64 64 64l416 0c35.3 0 64-28.7 64-64l0-224c0-35.3-28.7-64-64-64L160 32c-35.3 0-64 28.7-64 64zm64 160c35.3 0 64 28.7 64 64l-64 0 0-64zM224 96c0 35.3-28.7 64-64 64l0-64 64 0zM576 256l0 64-64 0c0-35.3 28.7-64 64-64zM512 96l64 0 0 64c-35.3 0-64-28.7-64-64zM288 208a80 80 0 1 1 160 0 80 80 0 1 1 -160 0zM48 120c0-13.3-10.7-24-24-24S0 106.7 0 120L0 360c0 66.3 53.7 120 120 120l400 0c13.3 0 24-10.7 24-24s-10.7-24-24-24l-400 0c-39.8 0-72-32.2-72-72l0-240z"/>
+              </svg>
+            </button>
+          </div>
+        </article>
+      </section>
+    </article>
   </main>
 </body>
 </html>

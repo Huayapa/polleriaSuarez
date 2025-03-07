@@ -1,10 +1,150 @@
+/* *
+* ESTRUCTURA PRINCIPAL DEL PROYECTO DASHBOARD
+* */
 body {
+  max-width: 120rem;
+  width: 100%;
+  margin:  0  auto;
   display: grid;
   grid-template-columns: 16rem 1fr;
   transition: all 0.5s ease;
+}
+main {
+  background-color: #6B728010;
+  margin: 0 1rem;
 }
 @media screen and (max-width: 720px) {
   body {
     grid-template-columns: 4rem 1fr;
   }
+}
+
+/* !
+! ESTILOS GLOBALES DEL DASHBOARD
+! */
+
+:root {
+  --color-d-primary: #1E1E1E;
+  --color-d-secondary: #ffffff;
+  --color-d-terciary: #A0AEC0;
+
+  --color-d-main: #6B728010;
+  --color-d-table: #f4f4f4;
+
+  --box-shadow: rgba(255, 255, 255, 0.1) 0px 1px 1px 0px inset, 
+  rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, 
+  rgba(0, 0, 0, 0.3) 0px 30px 60px -30px;
+}
+
+/* *
+* ESTILOS GROBAL DE TABLAS
+* */
+
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 20px;
+}
+th, td {
+  border-bottom: 1px solid var(--color-d-terciary);
+  padding: 10px;
+  text-align: left;
+}
+th {
+  background-color: var(--color-d-table);
+}
+
+/* *
+* ESTILOS DE CARDS
+* */
+
+.card {
+  background-color: var(--color-d-secondary);
+  border-radius: 10px;
+  padding: 1rem;
+  box-shadow: var(--box-shadow);
+}
+
+/* 
+<div class="card_info">
+  <h2>Titulos</h2>
+  <strong>Subtitulo</strong>
+</div>
+<div class="card_btn">
+  <button>
+    <svg width="20" height="20"></svg>
+  </button>
+</div> 
+*/
+
+.cardlarge {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem;
+  background-color: var(--color-d-secondary);
+  & .card_info {
+    & h2 {
+      margin: 0.2rem 0;
+      color: var(--color-d-terciary);
+      font-size: clamp(1rem, 2vw, 1.4rem);
+      font-weight: normal;
+    }
+    & strong {
+      font-size: 1.2rem;
+    }
+  }
+  & .card_btn button {
+    cursor: pointer;
+    width: 3rem;
+    height: 3rem;
+    border: 0;
+    border-radius: 10px;
+    background-color: var(--color-d-primary);
+    border: 2px solid var(--color-d-primary);
+    transition: all 0.5s ease;
+    & svg {
+      fill: var(--color-d-secondary);
+    }
+    &:hover {
+      background-color: var(--color-d-secondary);
+      & svg {
+        fill: var(--color-d-primary);
+      }
+    }
+  }
+}
+
+/* *
+* ESTILOS DE TITULO O SUBTITULO DE LAS CARDS
+* */
+/* 
+<div class="titleinfo">
+  <h2>Titulo</h2>
+  <span>subtitulo(fechas, etc...)</span>
+</div> 
+*/
+
+.titleinfo {
+  padding: 0 1rem;
+  & h2 {
+    margin: 0.5rem 0;
+    font-weight: normal;
+  }
+  & span {
+    color: var(--color-d-terciary);
+  }
+}
+
+
+/* *
+* ESTILOS DE TITULO
+* */
+.title {
+  margin: 0;
+  display: flex;
+  align-items: center;
+  font-weight: normal;
+  font-size: clamp(1.2rem, 5vw, 1.6rem);
 }
