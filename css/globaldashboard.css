@@ -28,6 +28,10 @@ main {
   --color-d-primary: #1E1E1E;
   --color-d-secondary: #ffffff;
   --color-d-terciary: #A0AEC0;
+  --color-d-btn: #800020;
+
+
+  --color-d-border-form: #E2E8F0;
 
   --color-d-main: #6B728010;
   --color-d-table: #f4f4f4;
@@ -52,9 +56,32 @@ th, td {
   border-bottom: 1px solid var(--color-d-terciary);
   padding: 10px;
   text-align: left;
+  font-size: clamp(0.8rem, 2vw, 1rem);
+  text-align: center;
 }
 th {
-  background-color: var(--color-d-table);
+  color: var(--color-d-terciary);
+  font-weight: normal;
+  /* background-color: var(--color-d-table); */
+}
+table .btn-dark, table .btn-red {
+  margin: 0.2rem auto;
+  cursor: pointer;
+  padding: 0.2rem 1.2rem;
+  border-radius: 5px;
+  border: 1px solid var(--color-d-primary);
+  color: var(--color-d-secondary);
+  background-color: var(--color-d-primary);
+  transition: all 0.5s ease;
+  &:hover {
+    background-color: transparent;
+    color: var(--color-d-primary);
+  }
+}
+
+table .btn-red {
+  border-color: var(--color-d-btn);
+  background-color: var(--color-d-btn);
 }
 
 /* *
@@ -151,4 +178,63 @@ th {
   align-items: center;
   font-weight: normal;
   font-size: clamp(1.1rem, 5vw, 1.6rem);
+}
+/* *
+* ESTILOS DE SECCION MAIN
+* */
+
+.section {
+  max-width: 60rem;
+  width: 100%;
+  min-height: 100vh;
+  padding: 2rem 0;
+  margin: 0 auto;
+  /* En cada pagina pondre el grid y su respectiva maquetación */
+}
+
+
+/* *
+* ESTILOS GENERAL DE FORMULARIOS  
+* */
+form {
+  & input:not(input[type="file"]), textarea, .insert_img {
+    width: 100%;
+    border: 1px solid var(--color-d-border-form);
+    padding: 1rem 1rem;
+    border-radius: 10px;
+    outline: none;
+    resize: none;
+    &::placeholder {
+      color: var(--color-d-terciary);
+    }
+  }
+
+  & .insert_img {
+    color: var(--color-d-terciary);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    & input {
+      display: none;
+    }
+    & svg {
+      fill: var(--color-d-terciary);
+    }
+  }
+  & button {
+    width: 100%;
+    cursor: pointer;
+    border-radius: 10px;
+    background-color: var(--color-d-primary);
+    border: 2px solid var(--color-d-primary);
+    color: var(--color-d-secondary);
+    padding: 0.8rem 1rem;
+    transition: all 0.5s ease;
+    &:hover {
+      color: var(--color-d-primary);
+      background-color: var(--color-d-secondary);
+    }
+  }
 }

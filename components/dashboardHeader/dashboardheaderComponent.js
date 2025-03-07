@@ -1,10 +1,10 @@
 class DashboardHeaderComponent extends HTMLElement {
   rutas = {
     inicio: {nombre: "Inicio", ruta: "dasInicio.html"},
-    productos: {nombre: "Productos", ruta: "#"},
-    pedidos: {nombre: "Pedidos", ruta: "#"},
-    clientes: {nombre: "Clientes", ruta: "#"},
-    reportes: {nombre: "Reportes", ruta: "#"},
+    productos: {nombre: "Productos", ruta: "dasproductos.html"},
+    pedidos: {nombre: "Pedidos", ruta: "daspedidos.html"},
+    clientes: {nombre: "Clientes", ruta: "dasclientes.html"},
+    reportes: {nombre: "Reportes", ruta: "dasreportes.html"},
     salir: {nombre: "Salir", ruta: "index.html"},
   };
   constructor() {

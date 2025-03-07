@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Dashboard - Inicio</title>
+  <!-- Permisos de poaticas -->
+  <meta http-equiv="Permissions-Poacy" content="browsing-topics=(), interest-cohort=(), attribution-reporting=()">
+  <!-- ESTILOS -->
+  <link rel="stylesheet" href="css/global.css">
+  <link rel="stylesheet" href="css/globaldashboard.css">
+  <link rel="stylesheet" href="css/dashproductos.css">
+  <!-- Componentes -->
+  <script src="components/dashboardHeader/dashboardheaderComponent.js"></script>
+</head>
+<body>
+  <dashboardheader-component></dashboardheader-component>
+  <main>
+    <article class="section section_view">
+      <!-- !TITULO -->
+      <h1 class="title">Productos</h1>
+      <!-- !SECCION DE TABLAS -->
+      <section class="card content1">
+        <div class="titleinfo">
+          <h2>Todos los Productos</h2>
+        </div> 
+        <table>
+          <tr>
+              <th>Id</th>
+              <th>Nombre</th>
+              <th>Descripción</th>
+              <th>Cantidad</th>
+              <th>Precio</th>
+              <th>Imagen</th>
+          </tr>
+          <tr>
+              <td>1</td>
+              <td>Pollo 1/4</td>
+              <td>Gaseosa pequeña, ensalada</td>
+              <td>1203</td>
+              <td>S/ 12</td>
+              <td><button class="btn-dark">Ver</button> <button class="btn-red">Editar</button></td>
+          </tr>
+          <tr>
+              <td>2</td>
+              <td>Pollo familiar</td>
+              <td>Gaseosa pequeña, ensalada</td>
+              <td>234</td>
+              <td>S/ 32</td>
+              <td><button class="btn-dark">Ver</button> <button class="btn-red">Editar</button></td>
+          </tr>
+          <tr>
+              <td>3</td>
+              <td>Chaufa</td>
+              <td>Gaseosa 2L</td>
+              <td>23</td>
+              <td>S/ 12</td>
+              <td><button class="btn-dark">Ver</button> <button class="btn-red">Editar</button></td>
+          </tr>
+          <tr>
+              <td>4</td>
+              <td>Gaseosa Inka Kola</td>
+              <td>Gaseosa Inka Kola</td>
+              <td>21</td>
+              <td>S/ 4</td>
+              <td><button class="btn-dark">Ver</button> <button class="btn-red">Editar</button></td>
+          </tr>
+          <tr>
+              <td>5</td>
+              <td>Torta de chocolate</td>
+              <td>Vaso de agua</td>
+              <td>21</td>
+              <td>S/ 5</td>
+              <td><button class="btn-dark">Ver</button> <button class="btn-red">Editar</button></td>
+          </tr>
+          <tr>
+              <td>6</td>
+              <td>Torta de chocolate</td>
+              <td>Vaso de agua</td>
+              <td>21</td>
+              <td>S/ 5</td>
+              <td><button class="btn-dark">Ver</button> <button class="btn-red">Editar</button></td>
+          </tr>
+          <tr>
+              <td>7</td>
+              <td>Torta de chocolate</td>
+              <td>Vaso de agua</td>
+              <td>21</td>
+              <td>S/ 5</td>
+              <td><button class="btn-dark">Ver</button> <button class="btn-red">Editar</button></td>
+          </tr>
+      </table>
+      </section>
+      <!-- !SECCION DE INSERTAR -->
+       <section class="card content2">
+        <div class="titleinfo">
+          <h2>Añadir Producto</h2>
+        </div>
+        <form action="#" id="form_insert">
+          <input 
+            class="formbox1"
+            type="text"
+            name="name"
+            placeholder="Nombre"
+            required
+          >
+
+          <textarea 
+            class="formbox2"
+            name="descript" 
+            id="descript"
+            placeholder="Descripción"
+          ></textarea>
+
+          <article class="insert_img formbox3">
+            <p>Inserta Imagen</p>
+            <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 448 512">
+              <path d="M256 80c0-17.7-14.3-32-32-32s-32 14.3-32 32l0 144L48 224c-17.7 0-32 14.3-32 32s14.3 32 32 32l144 0 0 144c0 17.7 14.3 32 32 32s32-14.3 32-32l0-144 144 0c17.7 0 32-14.3 32-32s-14.3-32-32-32l-144 0 0-144z"/>
+            </svg>
+            <p>Arrastra la imagen aqui.</p>
+            <input 
+              type="file" 
+              id="fileInput"
+              name="img"
+              accept="image/*">
+          </article>
+
+          <input 
+            class="formbox4"
+            type="number"
+            name="amount"
+            placeholder="Cantidad"
+            required
+          >
+
+          <input 
+            class="formbox5"
+            type="number"
+            name="price"
+            placeholder="Precio"
+            required
+          >
+
+          <button type="submit" class="formbox6">Añadir Producto</button>
+        </form>
+       </section>
+    </article>
+  </main>
+</body>
+</html>
