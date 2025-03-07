@@ -54,7 +54,7 @@ table {
 }
 th, td {
   border-bottom: 1px solid var(--color-d-terciary);
-  padding: 10px;
+  padding: 0.4rem;
   text-align: left;
   font-size: clamp(0.8rem, 2vw, 1rem);
   text-align: center;
@@ -64,7 +64,10 @@ th {
   font-weight: normal;
   /* background-color: var(--color-d-table); */
 }
-table .btn-dark, table .btn-red {
+table .btn-dark, table .btn-red  {
+  max-width: 6rem;
+  height: min-content;
+  width: 100%;
   margin: 0.2rem auto;
   cursor: pointer;
   padding: 0.2rem 1.2rem;
@@ -79,10 +82,37 @@ table .btn-dark, table .btn-red {
   }
 }
 
-table .btn-red {
+table .btn-red, .btn-red {
   border-color: var(--color-d-btn);
   background-color: var(--color-d-btn);
 }
+
+/* *
+* ESTILOS DE BOTONES "CUADRADO"
+* */
+.btn-red, .btn-dark {
+  cursor: pointer;
+  padding: 0;
+  width: 3rem;
+  height: 3rem;
+  border: 1px solid var(--color-d-primary);
+  color: var(--color-d-secondary);
+  background-color: var(--color-d-primary);
+  transition: all 0.5s ease;
+  &:hover {
+    background-color: transparent;
+    color: var(--color-d-primary);
+    & svg {
+      fill: var(--color-d-primary);
+    }
+  }
+}
+
+.btn-red {
+  border-color: var(--color-d-btn);
+  background-color: var(--color-d-btn);
+}
+
 
 /* *
 * ESTILOS DE CARDS
@@ -197,13 +227,18 @@ table .btn-red {
 * ESTILOS GENERAL DE FORMULARIOS  
 * */
 form {
-  & input:not(input[type="file"]), textarea, .insert_img {
+  & input:not(input[type="file"]), textarea, .insert_img, .styleinput {
     width: 100%;
     border: 1px solid var(--color-d-border-form);
     padding: 1rem 1rem;
     border-radius: 10px;
     outline: none;
     resize: none;
+    & h3 {
+      color: var(--color-d-terciary);
+      font-weight: normal;
+      margin: 0;
+    }
     &::placeholder {
       color: var(--color-d-terciary);
     }
@@ -232,9 +267,40 @@ form {
     color: var(--color-d-secondary);
     padding: 0.8rem 1rem;
     transition: all 0.5s ease;
+    & svg {
+      fill: var(--color-d-secondary);
+    }
     &:hover {
       color: var(--color-d-primary);
       background-color: var(--color-d-secondary);
     }
+  }
+}
+
+/* *
+* ESTILOS GENERAL DE SECCION DE PRODUCTOS  
+* */
+.prodsbox {
+  overflow: auto;
+  display: grid;
+  grid-template-columns: 1fr 3rem 3rem;
+  grid-template-rows: 3rem 1fr;
+  grid-template-areas: 
+  "h3 btn1 btn2"
+  "table1 table1 table1"
+  ;
+  align-items: center;
+  gap: 0.3rem;
+  & .h3 {
+    grid-area: h3;
+  }
+  & .btn1 {
+    grid-area: btn1;
+  }
+  & .btn2 {
+    grid-area: btn2;
+  }
+  & table {
+    grid-area: table1;
   }
 }

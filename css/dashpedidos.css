@@ -1,0 +1,106 @@
+/* *
+* SECCION PRINCIPAL DEL DASHBOARD MAIN
+* */
+.section_view {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 4rem 25rem 20rem;
+  grid-template-areas: 
+  "title"
+  "content1"
+  "content2"
+  ;
+  gap: 2rem;
+}
+/* * DEFINI AREA DE GRID A CADA SECCION */
+.section_view h1 {
+  grid-area: title; 
+}
+.content1 {
+  grid-area: content1;
+}
+.content2 {
+  grid-area: content2;
+}
+
+/* *
+* SECCION DE TABLE - OVERFLOW
+* */
+.content1 {
+  overflow: scroll;
+}
+
+/* *
+* SECCION DE FORMULARIO
+* */
+
+#form_insert {
+  margin-top: 2rem;
+  display: grid;
+  gap: 1rem;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(3, 3.2rem);
+  grid-template-areas: 
+  "formbox1 formbox4 formbox7"
+  "formbox2 formbox5 formbox7"
+  "formbox3 formbox6 formbox7"
+  ;
+}
+
+.formbox1 {
+  grid-area: formbox1;
+  display: grid;
+  grid-template-columns: 1fr 3.5rem;
+  gap: 1rem;
+  
+}
+.formbox2 {
+  grid-area: formbox2;
+}
+.formbox3 {
+  grid-area: formbox3;
+}
+.formbox4 {
+  grid-area: formbox4;
+}
+.formbox5 {
+  grid-area: formbox5;
+}
+.formbox6 {
+  grid-area: formbox6;
+}
+.formbox7 {
+  grid-area: formbox7;
+}
+
+/* *
+* RESPONSIVIDAD MOVIL
+* */
+
+@media screen and (max-width: 860px) {
+  .section_view {
+    max-width: 100%;
+    grid-template-columns: 1fr;
+    grid-template-rows: 6rem 25rem 1fr;
+    grid-template-areas: 
+    "title"
+    "content1" 
+    "content2"
+    ;
+  }
+  #form_insert {
+    display: grid;
+    gap: 1rem;
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(5, 3.2rem) 14rem 3.2rem;
+    grid-template-areas: 
+    "formbox1"
+    "formbox2"
+    "formbox3"
+    "formbox4"
+    "formbox5"
+    "formbox7"
+    "formbox6"
+    ;
+  }
+}
