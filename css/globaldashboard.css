@@ -124,6 +124,7 @@ table .btn-red, .btn-red {
   border-radius: 10px;
   padding: 1rem;
   box-shadow: var(--box-shadow);
+  animation: Opacity 1s ease;
 }
 
 /* 
@@ -220,6 +221,7 @@ table .btn-red, .btn-red {
   min-height: 100vh;
   padding: 2rem 0;
   margin: 0 auto;
+  animation: MoveTop 0.5s ease;
   /* En cada pagina pondre el grid y su respectiva maquetación */
 }
 
