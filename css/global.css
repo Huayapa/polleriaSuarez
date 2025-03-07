@@ -24,13 +24,13 @@ body {
 
 /*! SCROLL */
 
-body::-webkit-scrollbar{
+*::-webkit-scrollbar{
   width: 0.5vw;
   min-width: 8px;
   background-color: var(--color-secondary);
   border-radius: 20px;
 }
-body::-webkit-scrollbar-thumb  {
+*::-webkit-scrollbar-thumb  {
   background-color: var(--color-primary-alt);
 }
 
