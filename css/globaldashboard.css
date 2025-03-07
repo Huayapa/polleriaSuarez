@@ -72,6 +72,7 @@ table .btn-dark, table .btn-red  {
   cursor: pointer;
   padding: 0.2rem 1.2rem;
   border-radius: 5px;
+  text-align: center;
   border: 1px solid var(--color-d-primary);
   color: var(--color-d-secondary);
   background-color: var(--color-d-primary);

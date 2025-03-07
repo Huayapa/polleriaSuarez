@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Clientes</title>
+  <!-- Permisos de poaticas -->
+  <meta http-equiv="Permissions-Poacy" content="browsing-topics=(), interest-cohort=(), attribution-reporting=()">
+  <!-- ESTILOS -->
+  <link rel="stylesheet" href="css/global.css">
+  <link rel="stylesheet" href="css/globaldashboard.css">
+  <link rel="stylesheet" href="css/dashclientes.css">
+  <!-- Componentes -->
+  <script src="components/dashboardHeader/dashboardheaderComponent.js"></script>
+</head>
+<body>
+  <dashboardheader-component></dashboardheader-component>
+  <main>
+    <article class="section section_view">
+      <!-- !TITULO -->
+      <h1 class="title">Clientes</h1>
+      <!-- !SECCION DE TABLAS -->
+      <section class="card content1">
+        <div class="titleinfo">
+          <h2>Usuarios</h2>
+        </div> 
+
+        <table>
+          <thead>
+              <tr>
+                  <th>Id</th>
+                  <th>Nombre</th>
+                  <th>Apellidos</th>
+                  <th>Fecha Nacimiento</th>
+                  <th>DNI</th>
+                  <th>Acción</th>
+              </tr>
+          </thead>
+          <tbody>
+              <tr>
+                  <td>1</td>
+                  <td>Jose</td>
+                  <td>González</td>
+                  <td>12/05/1990</td>
+                  <td>12345678</td>
+                  <td><button class="btn-dark">Editar</button></td>
+              </tr>
+              <tr>
+                  <td>2</td>
+                  <td>Ana</td>
+                  <td>Martínez</td>
+                  <td>08/11/1985</td>
+                  <td>87654321</td>
+                  <td><button class="btn-dark">Editar</button></td>
+              </tr>
+              <tr>
+                  <td>3</td>
+                  <td>Pedro</td>
+                  <td>Ramirez</td>
+                  <td>25/07/1992</td>
+                  <td>56781234</td>
+                  <td><button class="btn-dark">Editar</button></td>
+              </tr>
+              <tr>
+                  <td>4</td>
+                  <td>Luisa</td>
+                  <td>Fernández</td>
+                  <td>14/03/1988</td>
+                  <td>34567812</td>
+                  <td><button class="btn-dark">Editar</button></td>
+              </tr>
+              <tr>
+                  <td>5</td>
+                  <td>Carlos</td>
+                  <td>Domínguez</td>
+                  <td>30/09/1995</td>
+                  <td>23456789</td>
+                  <td><button class="btn-dark">Editar</button></td>
+              </tr>
+              <tr>
+                  <td>6</td>
+                  <td>Elena</td>
+                  <td>Hidalgo</td>
+                  <td>17/06/1993</td>
+                  <td>67891234</td>
+                  <td><button class="btn-dark">Editar</button></td>
+              </tr>
+              <tr>
+                  <td>7</td>
+                  <td>Manuel</td>
+                  <td>Vega</td>
+                  <td>05/12/1987</td>
+                  <td>98765432</td>
+                  <td><button class="btn-dark">Editar</button></td>
+              </tr>
+          </tbody>
+        </table>
+      </section>
+      <!-- !SECCION DE INSERTAR -->
+       <section class="card content2">
+        <div class="titleinfo">
+          <h2>Añadir Cliente</h2>
+        </div>
+        <form action="#" id="form_insert">
+          <input 
+            class="formbox1"
+            type="text"
+            name="name"
+            placeholder="Nombre"
+            required
+          >
+
+          <input 
+            class="formbox2"
+            name="apellidos" 
+            placeholder="Apellidos"
+            required
+          >
+
+          <input 
+            class="formbox3"
+            type="text"
+            name="dni"
+            placeholder="DNI"
+            required
+          >
+
+          <input 
+            class="formbox4"
+            type="date"
+            name="fechanac"
+            placeholder="Fecha de Nacimiento"
+            required
+          >
+
+          <button type="submit" class="formbox5">Crear pedido</button>
+        </form>
+       </section>
+    </article>
+  </main>
+</body>
+</html>
