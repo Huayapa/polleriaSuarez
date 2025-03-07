@@ -307,3 +307,45 @@ form {
     grid-area: table1;
   }
 }
+
+/* *
+* ESTILOS MODAL DIALOG
+* */
+
+#dialog {
+  position: relative;
+  max-width: 30rem;
+  width: 100%;
+  height: 30rem;
+  padding: 2rem;
+  border: 0;
+  box-sizing: content-box;
+  overflow: hidden;
+  transition: all 0.5s ease;
+  & img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+  & button {
+    cursor: pointer;
+    position: absolute;
+    width: 2rem;
+    height: 2rem;
+    background-color: var(--color-d-primary);
+    color: var(--color-d-secondary);
+    top: 1rem;
+    right: 1rem;
+    border: 0;
+    font-size: 1.2rem;
+    border-radius: 5px;
+  }
+}
+
+@media screen and (max-width: 650px) {
+  #dialog {
+    max-width: 10rem;
+    height: 10rem;
+    padding: 0.5rem;
+  }
+}
